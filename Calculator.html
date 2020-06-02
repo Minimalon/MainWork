@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invensments Steam</title>
+    <link rel="stylesheet" href="Style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  
+  <link rel="stylesheet" href="JS.js">
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  
+  <!-- Анимация логотипа сайта -->
+  <script> 
+   $(document).ready(function() {
+    $('.header-left img.animate__animated').hover(
+     function() {
+      $(this).addClass('animate__headShake'); // Добавляем класс shakeX
+     }
+    )})
+  </script>
+  
+</head>
+<!-- ШАПКА -->
+<header>
+   <div class="header-left"><a href="main.html"><img class="animate__animated" src="images/Header-Logo.png" alt=""></a></div>
+   <div class="header-center">
+       <ul>
+           <li><a href="main.html">Главная</a></li>
+           <li><a href="table.html">Таблица</a></li>
+           <li><a href="Calculator.html">Калькулятор</a></li>    
+       </ul>
+   </div>
+   
+   <div class="header-right"></div>
+   </header>
+    
+<!--Calculator-->
+    
+<body>
+<div class="calculatorBG">
+    <div class="calculator">
+    <label for="1"><span>Привет</span></label>
+    <input type="text" name="1">
+    </div>
+</div>
+</body>
+
+
+<!--SOCIAL WEB LINKS-->
+<footer>  
+   <div class="footer-text"><p>Все отзывы писать в вк. Отвечу на всё!</p></div>
+    <div class="images-webs-box">
+     <div class="images-webs"> <!--Иконки для соц.сетей-->
+       <a href="https://vk.com/turbina_salimov"><img src="images/Soc.Web/VK.webp" alt="https://vk.com/turbina_salimov"></a>
+       <a href="https://www.instagram.com/minimal_on/"><img src="images/Soc.Web/inst.webp" alt="https://www.instagram.com/minimal_on/"></a>
+        </div>
+    </div>
+</footer>
+
+<script src = "JS.js"></script>
+</html>
