@@ -48,36 +48,40 @@
     <h1>Калькулятор акций</h1>
     
     <div class="calLabel"><label for="1"><p>Отклад в месяц</p></label>
-    <input type="text" name="1"></div>
+    <input type="number" name="1" id="inMonth"></div>
     
     <div class="calLabel"><label for="1"><p>Количество годов/месяцов</p></label>
-    <input type="text" name="1"></div>
+    <input type="number" name="1" id="numberYearMonth"></div>
     
     <div class="calCheckedBox">
-        <input type="checkbox" class="custom-checkbox" id="month" name="month" value="yes">
+        <input type="checkbox" class="custom-checkbox" id="month" name="month" value="">
         <label for="month">В месяцах</label>
        
-        <input type="checkbox" class="custom-checkbox" id="year" name="year" value="yes">
+        <input type="checkbox" class="custom-checkbox" id="year" name="year" value="">
         <label for="year">В годах</label>
     </div>
     
     <div class="calLabel"><label for="1"><p>Проценты</p></label>
-    <input type="text" name="1"></div>
+    <input type="number" name="1" id="percent"></div>
     
-    <div class="calLabel"><label for="1"><p>Стоимость акции</p></label>
-    <input type="text" name="1"></div>
+    <div class="calLabel"><label for="1" id="stockPrice"><p>Стоимость акции</p></label>
+    <input type="number" name="1"></div>
     
     <div class="calLabel"><label for="1"><p>Стоимость дивидента на 1 шт</p></label>
-    <input type="text" name="1"></div>
+    <input type="number" name="1" id="dividentsPrice"></div>
     
-    <div class="calTextarea"><textarea name="" id="Otvet" cols="30" rows="10"></textarea></div>
+    <div class="calTextarea"><textarea name="" id="Otvet"
+        class = "TextArea"
+     cols="30" rows="10" readonly></textarea></div>
     
-    <div class="calButton"><button>Start</button></div>
+    <div class="calButton"><button id="bStart">Start</button></div>
     
     </div>
     </div>
 </div>
 </form>
+<script src= "JS.js"></script>
+<script src="test.js"></script>
 </body>
 
 
@@ -92,5 +96,4 @@
     </div>
 </footer>
 
-<script src = "JS.js"></script>
 </html>
